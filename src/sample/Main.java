@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-   /*
+   /* seb
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
@@ -37,6 +37,7 @@ public class Main extends Application {
         Label dropped = new Label("");
         VBox dragTarget = new VBox();
         dragTarget.getChildren().addAll(label,dropped);
+
         dragTarget.setOnDragOver(new EventHandler<DragEvent>() {
 
             @Override
@@ -49,6 +50,7 @@ public class Main extends Application {
                 event.consume();
             }
         });
+
 
         dragTarget.setOnDragDropped(new EventHandler<DragEvent>() {
 
